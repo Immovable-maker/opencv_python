@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread("ir.jpg", cv2.IMREAD_COLOR)  # Numpy 객체로 만드는 함수
+img = cv2.imread("cat.jpg", cv2.IMREAD_COLOR)  # Numpy 객체로 만드는 함수
 # imshow, imwrite(이미지를 파일로 저장), waitKey(키보드 입력을 처리하는 함수 0넣으면무한대기 키입력하면 ascii 반환)
 # destoryAllWidows 창 닫기
 img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -17,7 +17,7 @@ img[:, :, 0] = 0
 # 그린 삭제
 img[:, :, 1] = 0
 
-cv2.imshow("ir", img)
+cv2.imshow("cat", img)
 cv2.waitKey(0)
 print(cv2.waitKey(0))
 cv2.destroyAllWindows()
